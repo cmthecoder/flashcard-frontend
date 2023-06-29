@@ -4,9 +4,12 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import StudyPage from "./pages/StudyPage";
 import EditCard from "./pages/EditCard";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
+    <>
+    <Navbar />
     <Routes>
       <Route path='/' element={<LandingPage />} />
       <Route path='/login' element={<Login />} />
@@ -14,6 +17,7 @@ function App() {
       <Route path='/study-page' element={<StudyPage />} />
       <Route path='/edit-card' element={<EditCard />} />
     </Routes>
+    </>
   );
 }
 
